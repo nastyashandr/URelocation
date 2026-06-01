@@ -1,0 +1,29 @@
+@use "../helpers" as *;
+
+.companies {
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE и Edge */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    column-gap: fluid(20, 11);
+    width: max-content;
+  }
+
+  &__link {
+    @include hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__image {
+    width: fluid(157, 90);
+    height: fluid(67, 39);
+  }
+}

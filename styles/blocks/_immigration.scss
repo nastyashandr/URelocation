@@ -1,0 +1,64 @@
+@use "../helpers" as *;
+
+.immigration {
+  &__inner {
+    display: grid;
+    row-gap: fluid(54, 29);
+  }
+
+  &__list {
+    display: grid;
+    row-gap: fluid(35, 30);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: fluid(230, 1);
+
+    &:nth-child(even) {
+      @include mobile-above {
+        flex-direction: row-reverse;
+        column-gap: fluid(125, 1);
+      }
+    }
+
+    @include mobile {
+      flex-direction: column-reverse;
+      align-items: start;
+      row-gap: rem(20);
+    }
+
+    &-info {
+      display: grid;
+      row-gap: fluid(12, 10);
+    }
+
+    &-text {
+      font-size: rem(18);
+      line-height: 1.83333;
+
+      @include mobile {
+        line-height: 1.66667;
+      }
+    }
+
+    &-img {
+      @include mobile {
+        width: 100%;
+      }
+    }
+
+    &-image {
+      min-width: fluid(505, 300);
+      height: fluif(329, 200);
+      border-radius: rem(20);
+      box-shadow: var(--box-shadow);
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+}

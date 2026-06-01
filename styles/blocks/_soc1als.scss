@@ -1,0 +1,31 @@
+@use "../helpers" as *;
+
+.soc1als {
+  display: flex;
+  align-items: center;
+  column-gap: fluid(20, 2);
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: rem(40);
+      height: rem(40);
+      border-radius: 50%;
+      background-color: #272a2d;
+    }
+  }
+
+  &__link {
+    display: inline-flex;
+    padding: rem(20);
+  }
+}

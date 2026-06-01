@@ -1,0 +1,22 @@
+@use "../helpers" as *;
+
+.feedback-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: rem(18);
+  column-gap: fluid(20, 10);
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__submit-button {
+    border: none;
+    min-width: rem(185);
+
+    @include mobile-s {
+      width: 100%;
+    }
+  }
+}

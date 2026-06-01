@@ -1,0 +1,26 @@
+@use "../helpers" as *;
+
+.test {
+  &__inner {
+    display: grid;
+    row-gap: fluid(36, 20);
+  }
+  &__body {
+    @include mobile-s {
+      width: 100%;
+    }
+    
+    &-inner {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__button {
+    padding: rem(29) rem(46);
+
+    @include mobile-s {
+      width: 100%;
+    }
+  }
+}

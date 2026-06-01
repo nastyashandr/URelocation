@@ -1,0 +1,13 @@
+@use "../helpers" as *;
+
+.header{
+  &__inner{
+    display: grid;
+    row-gap: fluid(35, 28);
+  }
+
+  &__main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

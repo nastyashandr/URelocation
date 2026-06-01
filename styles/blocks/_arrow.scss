@@ -1,0 +1,36 @@
+@use "../helpers" as *;
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fluid(55, 43);
+  height: fluid(55, 43);
+  background-color: var(--color-light);
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+
+  svg {
+    width: rem(9);
+    height: rem(16);
+    display: block;
+  }
+
+  @include hover {
+    background-color: var(--color-accent-gr);
+
+    svg path {
+      stroke: var(--color-light);
+    }
+  }
+  &__prev {
+    left: 0;
+  }
+  &__next {
+    right: 0;
+  }
+}

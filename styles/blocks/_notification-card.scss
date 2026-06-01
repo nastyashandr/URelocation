@@ -1,0 +1,64 @@
+@use "../helpers" as *;
+
+.notification-card {
+  border-radius: rem(12);
+  padding: fluid(14, 2);
+  background-color: var(--color-dark-tile);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 1rem;
+
+  &__right {
+    display: flex;
+    align-items: center;
+    column-gap: fluid(14, 2);
+  }
+
+  &__icon {
+    width: rem(16);
+    height: rem(16);
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__title {
+    color: #bbbdd3;
+    font-size: rem(13);
+  }
+
+  &__text {
+    font-size: rem(11);
+    color: #82859e;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    column-gap: fluid(36, 2);
+
+    @include hover {
+      transform: none;
+    }
+
+    &-icon {
+      color: var(--color-light);
+    }
+  }
+
+  &__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: fluid(26, 10);
+    height: fluid(26, 10);
+    background-color: var(--color-accent-gr);
+    border-radius: 50%;
+    color: var(--color-light);
+    font-size: rem(11);
+  }
+}

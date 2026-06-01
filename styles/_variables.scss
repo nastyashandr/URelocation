@@ -1,0 +1,25 @@
+@use "helpers" as *;
+:root {
+  --color-light: #fff;
+  --color-light-2: #cad3e0;
+  --color-dark: #000;
+  --color-dark-title: #32333d;
+  --color-dark-text: #5b6574;
+  --color-dark-tile: #272831;
+  --color-dark-footer: #707882;
+
+  --color-accent-bl: #e7eefa;
+  --color-accent-gr: #5eb083;
+  --color-accent-or: #ffbb8a;
+
+  --color-bg-light: #fbfbfb;
+  --color-bg-dark: #2a3034;
+
+  --box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  --font-family: "Product Sans", sans-serif;
+
+  --container-width: #{rem(1240)};
+  --container-padding-x: #{rem(16)};
+  --transition-duration: 0.2s;
+}

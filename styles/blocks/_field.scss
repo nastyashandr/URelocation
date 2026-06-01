@@ -1,0 +1,41 @@
+@use "../helpers" as *;
+
+.field {
+  display: grid;
+  row-gap: rem(10);
+
+  &__label {
+    font-size: rem(18);
+  }
+
+  &__required-star {
+    color: red;
+    margin-left: rem(2);
+  }
+
+  &__control {
+    height: fluid(60, 40);
+    border: rem(1) solid #d4deed;
+    border-radius: rem(60);
+    width: 100%;
+    padding: fluid(21, 10) fluid(36, 15);
+
+    @include hover {
+      border-color: var(--color-accent-or);
+      box-shadow: var(--box-shadow);
+    }
+
+    &:user-invalid {
+      border-color: red;
+    }
+  }
+
+  textarea.field__control {
+    resize: none;
+    min-height: rem(120);
+  }
+
+  &--large {
+    grid-column: span 3;
+  }
+}

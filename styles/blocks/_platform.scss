@@ -1,0 +1,13 @@
+@use "../helpers" as *;
+
+.platform {
+  &__inner {
+    display: grid;
+    row-gap: fluid(25, 15);
+  }
+
+  &__body {
+    display: grid;
+    row-gap: fluid(32, 17);
+  }
+}

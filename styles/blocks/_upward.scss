@@ -1,0 +1,44 @@
+@use "../helpers" as *;
+
+.upward {
+  position: fixed;
+  bottom: rem(700);
+  right: rem(40);
+  width: rem(55);
+  height: rem(55);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #272a2d;
+  border-radius: 50%;
+  transition-duration: var(--transition-duration);
+  box-shadow: var(--box-shadow);
+  z-index: 1;
+
+  &.active {
+    bottom: rem(40);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  @include hover {
+    background-color: var(--color-accent-gr);
+
+    svg {
+      path {
+        stroke: var(--color-light);
+      }
+    }
+  }
+
+  svg {
+    display: block;
+
+    path {
+      stroke: var(--color-accent-gr);
+    }
+  }
+}

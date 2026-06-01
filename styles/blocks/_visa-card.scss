@@ -1,0 +1,67 @@
+@use "../helpers" as *;
+
+.visa-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(25);
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-light);
+  border-radius: rem(20);
+  padding: rem(45);
+  transition-duration: var(--transition-duration);
+
+  @include hover {
+    box-shadow: var(--box-shadow);
+  }
+
+  @include mobile {
+    padding: rem(30);
+  }
+
+  &__list {
+    flex: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    row-gap: rem(15);
+
+    @include mobile {
+      row-gap: rem(23);
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: start;
+    column-gap: rem(16);
+  }
+
+  &__title {
+    color: var(--color-dark);
+    font-size: rem(40);
+  }
+
+  &__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: rem(30);
+    height: rem(30);
+    background-color: var(--color-accent-or);
+    border-radius: 50%;
+    color: var(--color-light);
+    font-size: rem(16);
+  }
+
+  &__button{
+    padding: rem(28) rem(65);
+    max-width: fit-content;
+
+    @include mobile{
+      padding-inline: rem(94);
+    }
+  }
+}

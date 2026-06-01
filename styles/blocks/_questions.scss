@@ -1,0 +1,8 @@
+@use "../helpers" as *;
+
+.questions{
+  &__inner{
+    display: grid;
+    row-gap: rem(23);
+  }
+}

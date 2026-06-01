@@ -1,0 +1,49 @@
+@use "../helpers" as *;
+
+.button {
+  font-size: rem(16);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: fluid(10, 7);
+  padding: fluid(21, 15) fluid(36, 15);
+  background-color: var(--color-dark-title);
+  border-radius: rem(60);
+  color: var(--color-light);
+  white-space: nowrap;
+  width: fit-content;
+
+  @include hover {
+    transform: scale(1.05);
+    color: var(--color-light);
+  }
+
+  &__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    .svg {
+      width: rem(18);
+      height: rem(18);
+      display: block;
+    }
+  }
+
+  &--green {
+    background-color: var(--color-accent-gr);
+
+    @include hover {
+      background-color: var(--color-accent-or);
+    }
+  }
+
+  &--orange {
+    background-color: var(--color-accent-or);
+
+    @include hover {
+      background-color: var(--color-accent-gr);
+    }
+  }
+}

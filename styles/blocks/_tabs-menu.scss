@@ -1,0 +1,30 @@
+@use "../helpers" as *;
+
+.tabs-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: rem(12);
+  overflow: hidden;
+  padding: rem(10) rem(15);
+
+  &.is-active {
+    background-color: var(--color-light);
+    color: var(--color-dark-title);
+
+    .tabs-menu__title {
+      color: var(--color-dark-title);
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    column-gap: rem(14);
+  }
+
+  &__icon {
+    width: rem(16);
+    height: rem(18);
+  }
+}
