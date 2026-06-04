@@ -1,11 +1,13 @@
 import Header from './Header.js'
 import TabsCollecton from './Tabs.js'
+import DropdownMenu from './DropdownMenu.js'
 
 new Header()
 new TabsCollecton()
+new DropdownMenu()
 
 $(function () {
-  
+
   // Слайдеры
   $('.peoples__slider').slick({
     slidesToShow: 4,
