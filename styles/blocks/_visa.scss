@@ -16,7 +16,7 @@
     gap: rem(24);
     align-items: stretch;
 
-    @include mobile{
+    @include mobile {
       display: flex;
       flex-direction: column;
       row-gap: rem(20);

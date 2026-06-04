@@ -5,7 +5,7 @@
 
   &__inner {
     background-color: var(--color-bg-dark);
-    border-radius: rem(20) rem(20) 0 0;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
     overflow: hidden;
     padding: fluid(40, 25) fluid(54, 25);
     display: grid;

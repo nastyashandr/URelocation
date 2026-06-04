@@ -27,7 +27,7 @@
   }
 
   &__slide {
-    border-radius: rem(20);
+    border-radius: var(--border-radius);
     padding: fluid(27, 18);
     background-color: #fff6ef;
 
@@ -54,7 +54,7 @@
       row-gap: rem(21);
       align-items: start;
       justify-content: space-between;
-      border-radius: rem(20);
+      border-radius: var(--border-radius);
       background-color: var(--color-light);
       padding: fluid(37, 2) fluid(43, 2);
 
@@ -111,7 +111,7 @@
 
       @include mobile {
         row-gap: rem(16);
-        border-radius: rem(20);
+        border-radius: var(--border-radius);
         background-color: #fff6ef;
       }
 

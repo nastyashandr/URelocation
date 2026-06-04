@@ -7,7 +7,7 @@
   height: 100%;
   width: 100%;
   background-color: var(--color-light);
-  border-radius: rem(20);
+  border-radius: var(--border-radius);
   padding: rem(45);
   transition-duration: var(--transition-duration);
 

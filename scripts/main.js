@@ -7,8 +7,6 @@ new TabsCollecton()
 new DropdownMenu()
 
 $(function () {
-
-  // Слайдеры
   $('.peoples__slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -62,7 +60,6 @@ $(function () {
     $('.testimonials__slider').slick('slickNext')
   })
 
-  // Кнопка скролла вверх
   const upwardButton = document.querySelector('.upward');
 
   window.addEventListener('scroll', function () {

@@ -2,7 +2,7 @@
 
 .accordion {
   background-color: var(--color-light);
-  border-radius: rem(20);
+  border-radius: var(--border-radius);
   padding: rem(20) rem(30);
 
   &__details {

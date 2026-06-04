@@ -38,7 +38,7 @@
 
     &-inner {
       background-color: var(--color-light);
-      border-radius: rem(20);
+      border-radius: var(--border-radius);
       display: grid;
       grid-template-columns: 30% 70%;
       overflow: hidden;
@@ -49,7 +49,7 @@
     }
 
     &-menu {
-      border-radius: rem(20) 0 0 rem(20);
+      border-radius: var(--border-radius) 0 0 var(--border-radius);
       background-color: var(--color-dark-title);
       padding: fluid(34, 10) fluid(37, 12);
       display: flex;

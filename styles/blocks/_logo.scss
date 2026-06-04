@@ -6,13 +6,13 @@
   column-gap: rem(22);
   position: relative;
 
-  &--dark{
+  &--dark {
     color: var(--color-dark-footer);
-    
-    .logo__text{
-      &::before {      
-      background-color: var(--color-dark-footer);
-    }
+
+    .logo__text {
+      &::before {
+        background-color: var(--color-dark-footer);
+      }
     }
   }
 

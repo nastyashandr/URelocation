@@ -1,52 +1,52 @@
 @use "../helpers" as *;
 
-.form-card{
+.form-card {
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
   row-gap: fluid(73, 30);
   padding: fluid(32, 10);
-  border-radius: rem(20);
+  border-radius: var(--border-radius);
 
-  &--bl{
+  &--bl {
     background-color: #e5edfa;
   }
 
-  &--or{
+  &--or {
     background-color: #ffeddf;
   }
 
-  &--gr{
+  &--gr {
     background-color: #edfff5;
   }
 
-  &__top{
+  &__top {
     flex: 1;
     display: grid;
     row-gap: fluid(15, 7);
   }
 
-  &__img{
+  &__img {
     width: rem(35);
     height: rem(35);
 
-    img{
+    img {
       width: 100%;
       height: 100%;
     }
   }
 
-  &__title{
+  &__title {
     font-size: rem(17);
     color: var(--color-dark-title);
   }
 
-  &__subtitle{
+  &__subtitle {
     font-size: rem(13);
   }
 
-  &__button{
+  &__button {
     margin-top: auto;
     align-self: flex-start;
     padding: fluid(18, 10) fluid(31, 20);
